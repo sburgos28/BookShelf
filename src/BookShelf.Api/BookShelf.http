@@ -1,0 +1,50 @@
+@host = http://localhost:5080
+
+### Listar todos los libros
+GET {{host}}/api/books
+
+### Obtener un libro por ID
+GET {{host}}/api/books/1
+
+### Crear un libro
+POST {{host}}/api/books
+Content-Type: application/json
+
+{
+  "title": "Dune",
+  "author": "Frank Herbert",
+  "genre": "Ciencia ficción",
+  "publicationYear": 1965,
+  "readingStatus": "Read",
+  "rating": 5
+}
+
+### Actualizar un libro
+# Cambia el ID de la ruta por uno existente.
+PUT {{host}}/api/books/1
+Content-Type: application/json
+
+{
+  "title": "Dune",
+  "author": "Frank Herbert",
+  "genre": "Ciencia ficción",
+  "publicationYear": 1965,
+  "readingStatus": "Reading",
+  "rating": 4
+}
+
+### Eliminar un libro
+DELETE {{host}}/api/books/1
+
+### Petición inválida: sin autor, año futuro y estado inexistente
+POST {{host}}/api/books
+Content-Type: application/json
+
+{
+  "title": "Libro sin autor",
+  "publicationYear": 3000,
+  "readingStatus": "Finished"
+}
+
+### Libro inexistente
+GET {{host}}/api/books/9999
