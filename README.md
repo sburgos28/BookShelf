@@ -105,7 +105,7 @@ HTTP → BooksController → BookService → BookShelfDbContext → MySQL
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/TU_USUARIO/BookShelf.git
+git clone https://github.com/sburgos28/BookShelf.git
 cd BookShelf
 dotnet restore
 dotnet tool restore
