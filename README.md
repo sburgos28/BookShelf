@@ -8,7 +8,7 @@
 
 API REST para gestionar una biblioteca personal de libros. Permite crear, consultar, actualizar y eliminar libros desde una interfaz web o directamente contra la API, con validaciones y respuestas de error coherentes.
 
-![Interfaz web de BookShelf](docs/images/bookshelf-ui.png)
+![Interfaz web de BookShelf](docs/images/bookshelf-ui-v2.png)
 
 **Estado:** v1. CRUD completo e interfaz web mínima. La búsqueda, los filtros y las estadísticas están planificados para la siguiente versión.
 
