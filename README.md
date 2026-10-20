@@ -6,9 +6,9 @@
 ![MySQL](https://img.shields.io/badge/MySQL-8.4-4479A1)
 ![Swagger](https://img.shields.io/badge/Swagger-OpenAPI-85EA2D)
 
-API REST para gestionar una biblioteca personal de libros. Proyecto de portfolio backend construido con C#, ASP.NET Core Web API, Entity Framework Core y MySQL.
+API REST para gestionar una biblioteca personal de libros, construida con C#, ASP.NET Core Web API, Entity Framework Core y MySQL.
 
-La aplicación permite registrar libros, consultarlos, actualizarlos y eliminarlos desde una interfaz web sencilla o directamente contra la API, con validaciones y respuestas de error coherentes. Está pensada como una primera versión funcional, fácil de leer y de defender en una entrevista técnica.
+La aplicación permite registrar libros, consultarlos, actualizarlos y eliminarlos desde una interfaz web sencilla o directamente contra la API, con validaciones y respuestas de error coherentes.
 
 ## Estado del proyecto
 
@@ -41,7 +41,7 @@ La aplicación permite registrar libros, consultarlos, actualizarlos y eliminarl
 
 ### Por qué estas versiones
 
-- **.NET 10 es LTS** (soporte hasta noviembre de 2028). .NET 9 es una versión STS cuya ventana de soporte termina en noviembre de 2026, por lo que no es una buena base para un proyecto que quieres mantener en el portfolio.
+- **.NET 10 es LTS** (soporte hasta noviembre de 2028). .NET 9 es una versión STS cuya ventana de soporte termina en noviembre de 2026, por lo que no es una buena base para un proyecto a medio plazo.
 - **Proveedor oficial de MySQL**: Pomelo, el proveedor comunitario habitual, todavía no publica una versión estable para EF Core 10. El paquete `MySql.EntityFrameworkCore` de Oracle es el proveedor compatible con EF Core 10 en el momento de crear el proyecto.
 - **Swashbuckle** se usa para generar el documento OpenAPI y servir Swagger UI en la misma aplicación.
 - **DataAnnotations** es suficiente para las validaciones de esta versión; no se añadió FluentValidation para evitar una dependencia extra.
@@ -380,4 +380,4 @@ La captura muestra la interfaz servida en `http://localhost:5080/`. Para añadir
 
 ## Autor
 
-Proyecto de portfolio de [@sburgos28](https://github.com/sburgos28).
+Santiago Burgos ([@sburgos28](https://github.com/sburgos28)).
